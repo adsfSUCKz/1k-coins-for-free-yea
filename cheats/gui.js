@@ -763,7 +763,6 @@
                                 }).then(console.log);
                                 axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 1000, addedXp: 300 })
                                     .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got 1k coins (hoppfully you dont get banned :/ )`))
-                                    .catch(() => alert('There was an error when adding rewards.'));
                             });
                         }
                     }
